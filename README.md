@@ -29,6 +29,7 @@ A customizable and responsive logo slider widget for Elementor page builder. Fea
 ## Usage Instructions
 
 ### Adding the Widget
+
 1. Edit your page with Elementor
 2. Search for "Logos Slider" in the elements panel
 3. Drag and drop the widget to your desired section
@@ -36,12 +37,14 @@ A customizable and responsive logo slider widget for Elementor page builder. Fea
 ### Configuring the Widget
 
 #### Title Section
+
 - Toggle title visibility
 - Choose heading tag (H1-H6)
 - Customize typography, color, and spacing
 - Default: H3, left-aligned
 
 #### Logo Settings
+
 1. Click "Add Logos" to open the media library
 2. Select or upload your logo images
 3. Adjust the following settings:
@@ -54,18 +57,21 @@ A customizable and responsive logo slider widget for Elementor page builder. Fea
 ### Image Requirements
 
 #### Recommended Dimensions
+
 - **Base Display Size**: 120px × 120px
 - **Recommended Upload Size**: 240px × 240px (2x for retina displays)
 - **Maximum Size**: 400px × 400px
 - **Aspect Ratio**: 1:1 (square) recommended
 
 #### File Specifications
+
 - **Format**: PNG or SVG preferred (for transparency)
 - **Resolution**: 72-144 DPI
 - **Color Mode**: RGB
 - **File Size**: Under 100KB recommended
 
 #### Best Practices
+
 - Use transparent backgrounds (PNG/SVG)
 - Maintain consistent dimensions across all logos
 - Upload at 2x the display size for retina support
@@ -75,6 +81,7 @@ A customizable and responsive logo slider widget for Elementor page builder. Fea
 ### Performance Optimization
 
 For best performance:
+
 - Compress images before uploading
 - Keep total number of logos under 20
 - Use PNG/SVG format for best quality/size ratio
@@ -84,6 +91,7 @@ For best performance:
 ## Customization Options
 
 ### Style Settings
+
 - Logo size: 50px to 300px
 - Base opacity: 0 to 1
 - Hover opacity: 0 to 1
@@ -91,12 +99,14 @@ For best performance:
 - Background modes: Light/Dark/Custom
 
 ### Animation
+
 - Auto-scroll speed adjustable
 - Pause on hover
 - Smooth transitions
 - RTL support
 
 ### Responsive Behavior
+
 - Fully responsive
 - Maintains aspect ratio
 - Adjusts speed on different screen sizes
@@ -105,6 +115,7 @@ For best performance:
 ## Translation
 
 The plugin is translation-ready and includes:
+
 - English (default)
 - Spanish
 - POT file for additional translations
@@ -131,6 +142,7 @@ Common issues and solutions:
 ## Support
 
 For support and bug reports:
+
 - Create an issue on GitHub
 - Contact through WordPress.org plugin page
 - Email support: [your-support-email]
@@ -142,14 +154,16 @@ GPL v2 or later
 ## Credits
 
 Developed by Adalberto H. Vega
-- LinkedIn: https://linkedin.com/in/ahvega
+
+- LinkedIn: <https://linkedin.com/in/ahvega>
 
 ## Changelog
 
 ### 1.0.0
+
 - Initial release
 - Basic slider functionality
 - Hover effects
 - Image protection
 - Title section
-- Translation ready 
+- Translation ready
