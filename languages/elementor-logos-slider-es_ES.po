@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Elementor Logos Slider 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementor-logos-slider\n"
+"POT-Creation-Date: 2024-03-20 12:00+0000\n"
+"PO-Revision-Date: 2024-03-20 12:00+0000\n"
+"Last-Translator: Adalberto H. Vega <your-email@example.com>\n"
+"Language-Team: Spanish\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4\n"
+"X-Domain: elementor-logos-slider\n"
+
+#: elementor-logos-slider.php:64
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr "\"%1$s\" requiere que \"%2$s\" esté instalado y activado."
+
+#: elementor-logos-slider.php:65
+msgid "Elementor Logos Slider"
+msgstr "Carrusel de Logotipos para Elementor"
+
+#: elementor-logos-slider.php:66
+msgid "Elementor"
+msgstr "Elementor"
+
+#: elementor-logos-slider.php:109
+msgid "Logo Widgets"
+msgstr "Widgets de Logotipos"
+
+#: includes/widgets/logos-slider.php:8
+msgid "Title"
+msgstr "Título"
+
+#: includes/widgets/logos-slider.php:16
+msgid "Our Partners"
+msgstr "Nuestros Socios"
+
+#: includes/widgets/logos-slider.php:17
+msgid "Enter your title"
+msgstr "Ingrese su título"
+
+#: includes/widgets/logos-slider.php:24
+msgid "HTML Tag"
+msgstr "Etiqueta HTML"
+
+#: includes/widgets/logos-slider.php:47
+msgid "Title Style"
+msgstr "Estilo del Título"
+
+#: includes/widgets/logos-slider.php:56
+msgid "Alignment"
+msgstr "Alineación"
+
+#: includes/widgets/logos-slider.php:60
+msgid "Left"
+msgstr "Izquierda"
+
+#: includes/widgets/logos-slider.php:64
+msgid "Center"
+msgstr "Centro"
+
+#: includes/widgets/logos-slider.php:68
+msgid "Right"
+msgstr "Derecha"
+
+#: includes/widgets/logos-slider.php:106
+msgid "Color"
+msgstr "Color"
+
+#: includes/widgets/logos-slider.php:122
+msgid "Margin"
+msgstr "Margen"
+ 

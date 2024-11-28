@@ -1,0 +1,76 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE/Editor Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools/
+*.code-workspace
+
+# Development Tools
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+yarn.lock
+.sass-cache/
+*.css.map
+*.js.map
+
+# WordPress Specific
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+# Build/Deployment Files
+.env
+.env.*
+!.env.example
+*.zip
+*.tar
+*.gz
+dist/
+build/
+
+# Testing
+phpunit.xml
+.phpunit.result.cache
+/tests/coverage/
+
+# Translation Files
+*.mo
+*.pot~
+*.po~
+
+# Temporary Files
+*.swp
+*.swo
+*~
+.php_cs.cache
+
+# Documentation
+/docs/build/
+/docs/site/
+
+# Misc
+*.bak
+*.orig
+.htaccess 

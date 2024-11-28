@@ -1,0 +1,75 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Elementor Logos Slider 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementor-logos-slider\n"
+"POT-Creation-Date: 2024-03-20 12:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 3.4\n"
+"X-Domain: elementor-logos-slider\n"
+
+#: elementor-logos-slider.php:64
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: elementor-logos-slider.php:65
+msgid "Elementor Logos Slider"
+msgstr ""
+
+#: elementor-logos-slider.php:66
+msgid "Elementor"
+msgstr ""
+
+#: elementor-logos-slider.php:109
+msgid "Logo Widgets"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:8
+msgid "Title"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:16
+msgid "Our Partners"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:17
+msgid "Enter your title"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:24
+msgid "HTML Tag"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:47
+msgid "Title Style"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:56
+msgid "Alignment"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:60
+msgid "Left"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:64
+msgid "Center"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:68
+msgid "Right"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:106
+msgid "Color"
+msgstr ""
+
+#: includes/widgets/logos-slider.php:122
+msgid "Margin"
+msgstr ""
+ 

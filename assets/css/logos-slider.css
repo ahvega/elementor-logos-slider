@@ -1,0 +1,130 @@
+/* Logo slider main styles */
+
+:root {
+    --animation-duration: 60s;
+    --logo-size: 120px;
+    --logo-opacity: 0.55;
+    --logo-hover-opacity: 0.8;
+}
+
+.logo-slider-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
+    background: var(--background-color, #ffffff);
+}
+
+.logo-slider-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.logo-track {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: scroll var(--animation-duration) linear infinite;
+    min-width: 100%;
+}
+
+
+/* Logo item styles */
+
+.logo-item {
+    flex-shrink: 0;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    margin: 0 30px;
+    opacity: var(--logo-opacity);
+    transition: all 0.3s ease;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transform: scale(1);
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.logo-item img {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Hover effects */
+
+.logo-item:hover {
+    opacity: var(--logo-hover-opacity);
+    filter: grayscale(0%);
+    transform: scale(2);
+    z-index: 100;
+}
+
+
+/* Animation keyframes */
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Pause animation on hover */
+
+.logo-slider-container:hover .logo-track,
+.logo-track:hover,
+.logo-item:hover~.logo-track,
+.logo-track:hover .logo-item {
+    animation-play-state: paused !important;
+}
+
+.logo-slider-container:hover .logo-item,
+.logo-track:hover .logo-item {
+    animation-play-state: paused !important;
+}
+
+
+/* Inverted logo style */
+
+.logo-item.invert-logo {
+    filter: invert(1) brightness(1) contrast(1) grayscale(100%);
+}
+
+
+/* Adjust hover state for inverted logos */
+
+.logo-item.invert-logo:hover {
+    animation: none;
+    filter: invert(1) brightness(1) contrast(1) grayscale(0%);
+    opacity: var(--logo-hover-opacity) !important;
+    transform: scale(2);
+}
+
+.elementor-logos-slider-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.elementor-logos-slider-title {
+    margin-bottom: 1em;
+}
+
+.logo-slider-section {
+    width: 100%;
+}
