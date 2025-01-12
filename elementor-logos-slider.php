@@ -10,6 +10,17 @@
 
 if (!defined('ABSPATH')) exit;
 
+if (!did_action('elementor/loaded')) {
+    add_action('admin_notices', function() {
+        echo '<div class="notice notice-warning is-dismissible"><p>' . 
+             sprintf(__('"%1$s" requires "%2$s" to be installed and activated.', 'elementor-logos-slider'), 
+                     'Elementor Logos Slider', 
+                     'Elementor') . 
+             '</p></div>';
+    });
+    return;
+}
+
 final class Elementor_Logos_Slider {
     private static $_instance = null;
 
@@ -31,11 +42,6 @@ final class Elementor_Logos_Slider {
             false,
             dirname(plugin_basename(__FILE__)) . '/languages'
         );
-
-        if (!did_action('elementor/loaded')) {
-            add_action('admin_notices', [$this, 'admin_notice_missing_elementor']);
-            return;
-        }
 
         add_action('elementor/elements/categories_registered', [$this, 'add_elementor_widget_categories']);
         add_action('elementor/widgets/widgets_registered', [$this, 'register_widgets']);
@@ -76,7 +82,7 @@ final class Elementor_Logos_Slider {
 
     public function register_widgets() {
         require_once(__DIR__ . '/includes/widgets/logos-slider.php');
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor_Logos_Slider_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register(new \Elementor_Logos_Slider_Widget());
     }
 
     public function add_elementor_widget_categories($elements_manager) {

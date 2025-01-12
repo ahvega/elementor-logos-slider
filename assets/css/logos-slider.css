@@ -31,6 +31,10 @@
     white-space: nowrap;
     animation: scroll var(--animation-duration) linear infinite;
     min-width: 100%;
+    overflow: visible;
+    min-height: 240px;
+    margin: -40px 0;
+    align-items: center;
 }
 
 
