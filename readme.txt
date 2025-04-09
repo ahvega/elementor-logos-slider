@@ -20,7 +20,7 @@ Features:
 * Responsive design
 * Customizable slider settings
 * Support for multiple image formats
-* Smooth animations
+* Smooth animations with fade-in/fade-out effects
 * Touch-enabled for mobile devices
 * Autoplay option
 * Navigation controls
@@ -44,7 +44,7 @@ The slider supports all major image formats including JPG, PNG, GIF, and SVG.
 
 = Can I customize the slider settings? =
 
-Yes, you can customize various aspects including slide speed, number of slides to show, autoplay settings, and more through the Elementor interface.
+Yes, you can customize various aspects including slide speed, number of slides to show, autoplay settings, fade-in/fade-out effects, and more through the Elementor interface.
 
 == Screenshots ==
 
@@ -54,10 +54,18 @@ Yes, you can customize various aspects including slide speed, number of slides t
 
 == Changelog ==
 
+= 1.1.0 =
+* Added smooth fade-in/fade-out transition effect for logos
+* Added controls to enable/disable fade effect
+* Added slider to adjust fade width
+
 = 1.0.0 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Adds smooth fade-in/fade-out transitions for logos at the edges of the slider container.
 
 = 1.0.0 =
 Initial release of the Elementor Logos Slider plugin.

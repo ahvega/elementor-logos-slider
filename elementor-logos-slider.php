@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Elementor Logos Slider
  * Description: A customizable logo slider widget for Elementor
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Adalberto H. Vega
  * Author URI: https://linkedin.com/in/ahvega
  * Text Domain: elementor-logos-slider
@@ -12,10 +12,10 @@ if (!defined('ABSPATH')) exit;
 
 if (!did_action('elementor/loaded')) {
     add_action('admin_notices', function() {
-        echo '<div class="notice notice-warning is-dismissible"><p>' . 
-             sprintf(__('"%1$s" requires "%2$s" to be installed and activated.', 'elementor-logos-slider'), 
-                     'Elementor Logos Slider', 
-                     'Elementor') . 
+        echo '<div class="notice notice-warning is-dismissible"><p>' .
+             sprintf(__('"%1$s" requires "%2$s" to be installed and activated.', 'elementor-logos-slider'),
+                     'Elementor Logos Slider',
+                     'Elementor') .
              '</p></div>';
     });
     return;
@@ -96,4 +96,4 @@ final class Elementor_Logos_Slider {
     }
 }
 
-Elementor_Logos_Slider::instance(); 
+Elementor_Logos_Slider::instance();

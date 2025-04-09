@@ -24,6 +24,7 @@ A lightweight and powerful Elementor widget for creating beautiful, responsive l
 - Infinite scroll animation
 - Smooth hover zoom effect
 - Grayscale to color transition
+- Smooth fade-in/fade-out transitions at container edges
 - Light/Dark/Custom background modes
 - Customizable animation speed
 - Responsive design
@@ -58,6 +59,8 @@ A lightweight and powerful Elementor widget for creating beautiful, responsive l
    - Hover opacity
    - Animation speed
    - Background mode
+   - Fade effect (enable/disable)
+   - Fade width
 
 ### Image Requirements
 
@@ -102,12 +105,15 @@ For best performance:
 - Hover opacity: 0 to 1
 - Animation speed: 10s to 200s
 - Background modes: Light/Dark/Custom
+- Fade effect: Enable/Disable
+- Fade width: 5% to 30%
 
 ### Animation
 
 - Auto-scroll speed adjustable
 - Pause on hover
 - Smooth transitions
+- Fade-in/fade-out effect at container edges
 - RTL support
 
 ### Responsive Behavior
@@ -165,6 +171,12 @@ Developed by Adalberto H. Vega
 - LinkedIn: <https://linkedin.com/in/ahvega>
 
 ## Changelog
+
+### 1.1.0
+
+- Added smooth fade-in/fade-out transition effect for logos
+- Added controls to enable/disable fade effect
+- Added slider to adjust fade width
 
 ### 1.0.0
 

@@ -1,6 +1,16 @@
 /**
+ * Elementor Logos Slider - Main JavaScript File
+ *
+ * @package Elementor_Logos_Slider
+ * @since 1.0.0
+ */
+
+/**
  * LogoSlider class
+ * Handles the initialization and functionality of the logo slider
+ *
  * @class LogoSlider
+ * @since 1.0.0
  * @param {HTMLElement} element - The main container element for the logo slider
  */
 class LogoSlider {
@@ -11,6 +21,13 @@ class LogoSlider {
         this.disableImageDownload();
     }
 
+    /**
+     * Initialize the slider
+     * Sets up the animation and intersection observer
+     *
+     * @since 1.0.0
+     * @access public
+     */
     init() {
         // Get settings from Elementor
         const settings = this.element.dataset;
@@ -24,6 +41,13 @@ class LogoSlider {
         this.setupIntersectionObserver();
     }
 
+    /**
+     * Set up the Intersection Observer
+     * Pauses animation when slider is not visible in viewport
+     *
+     * @since 1.0.0
+     * @access private
+     */
     setupIntersectionObserver() {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -38,6 +62,13 @@ class LogoSlider {
         observer.observe(this.element);
     }
 
+    /**
+     * Disable image download functionality
+     * Prevents users from downloading or dragging logo images
+     *
+     * @since 1.0.0
+     * @access private
+     */
     disableImageDownload() {
         // Prevent right-click on the slider section
         this.element.addEventListener('contextmenu', (e) => {
@@ -74,6 +105,14 @@ jQuery(window).on('elementor/frontend/init', () => {
     });
 });
 
+/**
+ * Update logo animation timing
+ * Calculates and applies appropriate animation duration and delay for each logo
+ * based on its position and the container width
+ *
+ * @since 1.0.0
+ * @access public
+ */
 function updateLogoAnimationTiming() {
     const container = document.querySelector('.logo-slider-container');
     if (!container) return;

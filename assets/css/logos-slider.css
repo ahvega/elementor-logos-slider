@@ -1,10 +1,24 @@
-/* Logo slider main styles */
+/**
+ * Elementor Logos Slider - Main CSS File
+ *
+ * Contains all styles for the Logos Slider widget
+ *
+ * @package Elementor_Logos_Slider
+ * @since 1.0.0
+ * @since 1.1.0 Added fade effect styles
+ */
 
+/**
+ * CSS Variables
+ * These variables control the appearance and behavior of the slider
+ */
 :root {
     --animation-duration: 60s;
     --logo-size: 120px;
     --logo-opacity: 0.55;
     --logo-hover-opacity: 0.8;
+    --fade-width: 15%;
+    --enable-fade-effect: 1; /* 1 for enabled, 0 for disabled */
 }
 
 .logo-slider-section {
@@ -26,6 +40,36 @@
     user-select: none;
 }
 
+/**
+ * Fade Effect Styles
+ * Creates gradient masks at the container edges for smooth fade-in/fade-out transitions
+ * @since 1.1.0
+ */
+.logo-slider-container.fade-enabled::before,
+.logo-slider-container.fade-enabled::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: var(--fade-width);
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.logo-slider-container.fade-enabled::before {
+    left: 0;
+    background: linear-gradient(to right,
+                var(--background-color, #ffffff) 0%,
+                rgba(255, 255, 255, 0) 100%);
+}
+
+.logo-slider-container.fade-enabled::after {
+    right: 0;
+    background: linear-gradient(to left,
+                var(--background-color, #ffffff) 0%,
+                rgba(255, 255, 255, 0) 100%);
+}
+
 .logo-track {
     display: inline-flex;
     white-space: nowrap;
@@ -38,8 +82,11 @@
 }
 
 
-/* Logo item styles */
-
+/**
+ * Logo Item Styles
+ * Controls the appearance of individual logo items in the slider
+ * @since 1.0.0
+ */
 .logo-item {
     flex-shrink: 0;
     width: var(--logo-size);
@@ -67,8 +114,11 @@
 }
 
 
-/* Hover effects */
-
+/**
+ * Hover Effects
+ * Defines the appearance changes when hovering over logo items
+ * @since 1.0.0
+ */
 .logo-item:hover {
     opacity: var(--logo-hover-opacity);
     filter: grayscale(0%);
@@ -77,8 +127,11 @@
 }
 
 
-/* Animation keyframes */
-
+/**
+ * Animation Keyframes
+ * Defines the horizontal scrolling animation for the logo track
+ * @since 1.0.0
+ */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -89,8 +142,11 @@
 }
 
 
-/* Pause animation on hover */
-
+/**
+ * Pause Animation on Hover
+ * Stops the animation when hovering over the slider
+ * @since 1.0.0
+ */
 .logo-slider-container:hover .logo-track,
 .logo-track:hover,
 .logo-item:hover~.logo-track,
@@ -104,15 +160,21 @@
 }
 
 
-/* Inverted logo style */
-
+/**
+ * Inverted Logo Style
+ * Applies inversion filter to logos when the invert option is enabled
+ * @since 1.0.0
+ */
 .logo-item.invert-logo {
     filter: invert(1) brightness(1) contrast(1) grayscale(100%);
 }
 
 
-/* Adjust hover state for inverted logos */
-
+/**
+ * Hover State for Inverted Logos
+ * Special handling for hover effects on inverted logos
+ * @since 1.0.0
+ */
 .logo-item.invert-logo:hover {
     animation: none;
     filter: invert(1) brightness(1) contrast(1) grayscale(0%);
